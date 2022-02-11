@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <title>Form</title>
+    <title>The code review form</title>
 
 </head>
 <body>
@@ -18,44 +18,81 @@
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </section>
+</header>
 
+<main>
     <form method="post">
       <fieldset>
         <legend>Contact Information</legend>
+          <div class="container">
+              <label for="name">Full Name:</label><br>
+              <input type="text" id="name" name="name" placeholder="Required"><br>
+          </div>
 
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Required"><br>
-            <label for="email">Email Address:</label><br>
-            <input type="text" id="email" name="email" placeholder="Required"><br>
-            <label for="phone">Phone Number:</label><br>
-            <input type="text" id="phone" name="phone"><br>
-            <label for="address">Street Address:</label><br>
-            <input type="text" id="address" name="streetaddress"><br>
-            <label for="city">City:</label><br>
-            <input type="text" id="city" name="city"><br>
+          <div class="container">
+              <label for="email">Email Address:</label><br>
+              <input type="text" id="email" name="email" placeholder="Required"><br>
+          </div>
+
+          <div class="container">
+              <label for="phone">Phone Number:</label><br>
+              <input type="text" id="phone" name="phone" placeholder="Optional"><br>
+          </div>
+
+          <div class="container">
+              <label for="address">Street Address:</label><br>
+              <input type="text" id="address" name="streetaddress" placeholder="Required"><br>
+          </div>
+
+          <div class="container">
+              <label for="city">City:</label><br>
+              <input type="text" id="city" name="city" placeholder="Required"><br>
+          </div>
+
+          <div class="container">
             <label for="state">State:</label><br>
-            <input type="text" id="state" name="state"><br>
-            <label for="zip">Zip Code:</label><br>
-            <input type="text" id="zip" name="zipcode"><br>
+            <select name="state" id="state">
+                <option value="">Select State:</option>
+                <option value="newyork">New York</option>
+                <option value="texas">Texas</option>
+                <option value="nevada">Nevada</option>
+                <option value="arizona">Arizona</option>
+                <option value="maine">Maine</option>
+                <option value="ohio">Ohio</option>
+            </select>
+          </div>
+
+          <div class="container">
+              <label for="zip">Zip Code:</label><br>
+              <input type="text" id="zip" name="zipcode" placeholder="Required"><br>
+          </div>
         </fieldset>
 
         <fieldset>
            <legend>Newsletter</legend>
-            <p>Select the newsletters you would like to recieve</p>
+           <div class="newsletter">
+             <label>Select the newsletters you would like to recieve</label><br>
                 <input type="checkbox" id="news1" name="news" value="html">
                 <label for="news1">HTML News</label><br>
                 <input type="checkbox" id="news2" name="news" value="css">
                 <label for="news2">CSS News</label><br>
                 <input type="checkbox" id="news3" name="news" value="java">
-                <label for="news3">Javascript News</label><br
-              <p>Newsletter format</p>
+                <label for="news3">Javascript News</label>
+            </div>
+
+            <div class="newsletter">
+              <label>Newsletter format</label><br>
                 <input type="radio" id="html" name="format" value="html">
                 <label for="html">HTML</label><br>
                 <input type="radio" id="plain" name="format" value="plain">
                 <label for="plain">Plain text</label><br>
                 <textarea id="other" name="other"></textarea>
                 <input type="button" value="Sign up">
+            </div>
+
+      </fieldset>
     </form>
+</main>
 
       <footer>
         <p>Copyright The Code Review</p>
