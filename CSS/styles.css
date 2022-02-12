@@ -12,18 +12,38 @@ body {
 form {
   max-width: 100%;
 }
+h1 {
+padding: 20px 5px 20px 5px;
+background: #001a33;
+color: white;
+margin: 0;
+text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+font-size: 24px;
+}
+
+h2 {
+font-weight: bold;
+text-align: center;
+}
+
+header p {
+color: grey;
+text-align: center;
+}
 
 input[type="text"],
 select {
-  width: 70%;
+  width: 100%;
   height: 35px;
   border-style: none;
   background-color: lightgrey;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 input[id="zip"]{
-  width: 40%;
+  width: 50%;
 }
 
 input[id="textarea"] {
@@ -31,35 +51,23 @@ input[id="textarea"] {
   height: 100px;
 }
 
-h1 {
-  padding: 20px 5px 20px 5px;
-  background: darkgrey;
-  color: white;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: bolder;
-  text-align: center;
-}
-
-h2 {
-  font-weight: bold;
-  text-align: center;
-}
-
-header p {
-  color: grey;
-  text-align: center;
-}
-
-fieldset {
+fieldset,
+textarea,
+input[type="button"] {
   border: none;
 }
 
 legend {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+label {
+  font-size: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 ::placeholder {
@@ -71,12 +79,49 @@ legend {
 
 input:focus,
 textarea:focus,
-select {
+select:focus,
+input[type="button"]:focus {
   outline-color: #00BFFF;
 }
 
 select {
   font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+  background-color: lightgrey;
+  border-radius: 6px;
+}
+
+input[type="button"] {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #008B8B;
+  color: white;
+  margin-top: 20px;
+}
+
+.newsletter {
+  padding-bottom: 10px;
+}
+
+hr {
+  background-color: black;
+  margin: 3px 15px 10px 15px;
 }
 
 #top {
@@ -85,12 +130,10 @@ select {
   margin: 0 15px 0 15px;
 }
 
-hr {
-  background-color: black;
-  margin: 3px 15px 10px 15px;
-}
-
 footer {
   font-style: italic;
   text-align: center;
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: grey;
 }
