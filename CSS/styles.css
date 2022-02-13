@@ -15,7 +15,7 @@ form {
 
 h1 {
 padding: 20px 5px 20px 5px;
-background: #001a33;
+background: #400aab;
 color: white;
 margin: 0;
 text-transform: uppercase;
@@ -118,7 +118,7 @@ input[type="submit"] {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   border-radius: 6px;
-  background-color: #2bad9c;
+  background-color: #b48fff;
   color: white;
   margin-top: 20px;
 }
