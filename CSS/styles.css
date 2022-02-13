@@ -141,7 +141,7 @@ hr {
 footer {
   font-style: italic;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40%;
   font-size: 12px;
   color: grey;
 }
@@ -152,7 +152,12 @@ footer {
 .container {
   display: flex;
   flex-direction: row;
-  flex-basis: 50%
+  flex-basis: 100%
+}
+
+input,
+select {
+  flex-basis: 75%;
 }
 
 label {
@@ -161,21 +166,13 @@ label {
   padding-top: 18px;
 }
 
-label[for="zip"] {
-  flex-basis: 20%;
+input[id="zip"] {
+  flex-basis: 30%;
 }
-
 
 main {
-  margin-left: 350px;
-  margin-right: 350px;
+  width: 45%;
+  margin: 0 auto;
 }
-
-
-
-
-
-
-
 
 }
