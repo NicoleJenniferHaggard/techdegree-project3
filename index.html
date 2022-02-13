@@ -27,14 +27,15 @@
     <form method="post">
       <fieldset>
         <legend>Contact Information</legend>
+        
           <div class="container">
               <label for="name">Full Name:</label><br>
-              <input type="text" id="name" name="name" placeholder="Required"><br>
+              <input required type="text" id="name" name="name" placeholder="Required"><br>
           </div>
 
           <div class="container">
               <label for="email">Email Address:</label><br>
-              <input type="text" id="email" name="email" placeholder="Required"><br>
+              <input required type="text" id="email" name="email" placeholder="Required"><br>
           </div>
 
           <div class="container">
@@ -44,17 +45,17 @@
 
           <div class="container">
               <label for="address">Street Address:</label><br>
-              <input type="text" id="address" name="streetaddress" placeholder="Required"><br>
+              <input required type="text" id="address" name="streetaddress" placeholder="Required"><br>
           </div>
 
           <div class="container">
               <label for="city">City:</label><br>
-              <input type="text" id="city" name="city" placeholder="Required"><br>
+              <input required type="text" id="city" name="city" placeholder="Required"><br>
           </div>
 
           <div class="container">
             <label for="state">State:</label><br>
-            <select name="state" id="state">
+            <select required name="state" id="state">
                 <option value="">Choose State:</option>
                 <option value="alabama">Alabama</option>
                 <option value="alaska">Alaska</option>
