@@ -147,7 +147,19 @@ footer {
 }
 
 label {
-  flex-basis: 10%;
+  flex-basis: 25%;
+  align-items: baseline;
+  padding-top: 18px;
+}
+
+label[for="zip"] {
+  flex-basis: 20%;
+}
+
+
+main {
+  margin-left: 350px;
+  margin-right: 350px;
 }
 
 
