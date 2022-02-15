@@ -35,6 +35,8 @@ text-align: center;
 }
 
 input[type="text"],
+input[type="email"],
+input[type="tel"],
 select {
   width: 100%;
   height: 35px;
@@ -171,7 +173,7 @@ input[id="zip"] {
 }
 
 main {
-  width: 45%;
+  max-width: 500px;
   margin: 0 auto;
 }
 
